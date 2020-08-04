@@ -6,7 +6,6 @@ class UserController {
       const users = await User.findAll({
         attributes: ['uid', 'name', 'age', 'email'],
       });
-
       return res.json({ users });
     } catch (error) {
       return res.json({ error });
@@ -16,8 +15,6 @@ class UserController {
   async show(req, res) {
     try {
       const { uid } = req.params;
-      s;
-
       const user = await User.findByPk(uid);
 
       return res.json({ user });

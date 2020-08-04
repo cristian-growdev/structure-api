@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import cors from 'cors';
 
-import UserController from './app/controllers/UserController';
+import UserController from './app/controllers/Usercontroller';
 
 const routes = Router();
 routes.use(cors());
