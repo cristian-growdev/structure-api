@@ -16,6 +16,7 @@ class UserController {
   async show(req, res) {
     try {
       const { uid } = req.params;
+      s;
 
       const user = await User.findByPk(uid);
 
