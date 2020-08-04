@@ -29,6 +29,10 @@ class User extends Model {
           allowNull: false,
           type: Sequelize.STRING,
         },
+        cpf: {
+          allowNull: true,
+          type: Sequelize.STRING,
+        },
       },
       {
         sequelize,
